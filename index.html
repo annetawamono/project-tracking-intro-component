@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Frontend Mentor | Project tracking intro component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,23 +16,43 @@
   </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  <header>
+    <img class="header-item" class="logo" src="assets/images/logo.svg" alt="logo">
+    <nav class="header-item">
+      <a href="">Product</a>
+      <a href="">Features</a>
+      <a href="">Pricing</a>
+      <a href="">Login</a>
+    </nav>
+  </header>
+  <div id="intro-component" class="container">
+    <section>
+      <div id="intro-1">
+        New
+        Monograph Dashboard
+      </div>
 
-  New
-  Monograph Dashboard
+      <div id="intro-2">
+        <h1>Powerful insights into your team</h1>
+      </div>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+      <div id="intro-3">
+          Project planning and time tracking for agile teams
+      </div>
 
-  Schedule a demo
-  to see a live preview
-  
+      <div id="intro-4">
+        <button class="cta" type="button" name="button">Schedule a demo</button>
+        <span>to see a live preview<span>
+      </div>
+
+    </section>
+
+    <section><img src="assets/images/illustration-devices.svg" alt="devices"></section>
+  </div>
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>

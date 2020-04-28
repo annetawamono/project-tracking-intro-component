@@ -1,0 +1,26 @@
+body {
+  width: 1440px;
+  height: 100vh;
+  margin: auto;
+}
+
+.container {
+  @include flex-container-left;
+}
+
+#intro-component {
+  section {
+    width: 50%;
+  }
+}
+
+button {
+  &.cta {
+    background-color: $primary;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 10px 5px;
+    width: 150px;
+  }
+}
