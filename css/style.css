@@ -77,6 +77,8 @@ button.cta {
 header {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  margin-top: 62px;
 }
 
 body {
@@ -90,8 +92,19 @@ body {
   flex-direction: row;
 }
 
+#intro-component {
+  height: 100vh;
+}
 #intro-component section {
   width: 50%;
+  overflow-x: hidden;
+}
+#intro-component #hero-text {
+  margin-top: 256px;
+  padding-left: 164px;
+}
+#intro-component #hero-text > div {
+  width: 572px;
 }
 
 button.cta {

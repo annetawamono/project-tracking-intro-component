@@ -9,8 +9,17 @@ body {
 }
 
 #intro-component {
+  height: 100vh;
   section {
     width: 50%;
+    overflow-x: hidden;
+  }
+  #hero-text {
+    margin-top: 256px;
+    padding-left: 164px;
+    > div {
+      width: 572px;
+    }
   }
 }
 
