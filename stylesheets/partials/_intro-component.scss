@@ -11,8 +11,14 @@ body {
 #intro-component {
   height: 100vh;
   section {
-    width: 50%;
+    //width: 50%;
     overflow-x: hidden;
+  }
+  section#hero-text {
+    width: 43%;
+  }
+  section#hero-image {
+    width: 47%;
   }
   #hero-text {
     margin-top: 256px;
@@ -60,5 +66,20 @@ button {
   margin-top: 66px;
   > span {
     margin-left: 20px;
+  }
+}
+
+#hero-image {
+  > div {
+    position: absolute;
+    width: 100%;
+    background-color: $light-grey-blue;
+    height: 50vh;
+    border-bottom-left-radius: 60px 60px;
+  }
+  > img {
+    width: 65%;
+    position: absolute;
+    top: 220px;
   }
 }

@@ -124,8 +124,13 @@ body {
   height: 100vh;
 }
 #intro-component section {
-  width: 50%;
   overflow-x: hidden;
+}
+#intro-component section#hero-text {
+  width: 43%;
+}
+#intro-component section#hero-image {
+  width: 47%;
 }
 #intro-component #hero-text {
   margin-top: 256px;
@@ -167,6 +172,19 @@ button.cta {
 }
 #intro-4 > span {
   margin-left: 20px;
+}
+
+#hero-image > div {
+  position: absolute;
+  width: 100%;
+  background-color: #eef3f6;
+  height: 50vh;
+  border-bottom-left-radius: 60px 60px;
+}
+#hero-image > img {
+  width: 65%;
+  position: absolute;
+  top: 220px;
 }
 
 /*# sourceMappingURL=style.css.map */
