@@ -133,6 +133,10 @@ header > img {
 header > nav * {
   margin-left: 40px;
 }
+header > nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 body {
   width: 1440px;
@@ -172,6 +176,10 @@ button.cta {
   border-radius: 5px;
   padding: 16px 30px;
   width: 185px;
+}
+button:hover {
+  background-color: #FF8584;
+  cursor: pointer;
 }
 
 #intro-1 {

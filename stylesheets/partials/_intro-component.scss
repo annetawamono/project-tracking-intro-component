@@ -38,6 +38,10 @@ button {
     padding: 16px 30px;
     width: 185px;
   }
+  &:hover {
+    background-color: #FF8584;
+    cursor: pointer;
+  }
 }
 
 #intro-1 {
