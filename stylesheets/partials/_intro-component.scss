@@ -76,6 +76,7 @@ button {
     background-color: $light-grey-blue;
     height: 50vh;
     border-bottom-left-radius: 60px 60px;
+    z-index: -1;
   }
   > img {
     width: 65%;

@@ -63,6 +63,21 @@ h1 {
   color: #242942;
 }
 
+header > nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 36px;
+}
+header > nav a {
+  text-decoration: none;
+  color: #242942;
+}
+header > nav .grey {
+  color: #a0a1ac;
+}
+
 button.cta {
   font-weight: 700;
   font-size: 18px;
@@ -107,6 +122,16 @@ header {
   flex-direction: row;
   position: absolute;
   margin-top: 62px;
+  height: 37px;
+  padding-left: 164px;
+  justify-content: space-between;
+  width: 1110px;
+}
+header > img {
+  width: 37px;
+}
+header > nav * {
+  margin-left: 40px;
 }
 
 body {
@@ -180,6 +205,7 @@ button.cta {
   background-color: #eef3f6;
   height: 50vh;
   border-bottom-left-radius: 60px 60px;
+  z-index: -1;
 }
 #hero-image > img {
   width: 65%;

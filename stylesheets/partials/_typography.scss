@@ -17,6 +17,23 @@ h1 {
   color: $v-dark-blue;
 }
 
+header {
+  > nav {
+    a {
+      text-decoration: none;
+      color: $v-dark-blue;
+    }
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    .grey {
+      color: $grey-blue;
+    }
+  }
+}
+
 button {
   &.cta {
     font-weight: 700;

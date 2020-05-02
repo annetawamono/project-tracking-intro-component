@@ -2,4 +2,16 @@ header {
   @include flex-container-left;
   position: absolute;
   margin-top: 62px;
+  height: 37px;
+  padding-left: 164px;
+  justify-content: space-between;
+  width: 1110px;
+  > img {
+    width: 37px;
+  }
+  > nav {
+    * {
+      margin-left: 40px;
+    }
+  }
 }
