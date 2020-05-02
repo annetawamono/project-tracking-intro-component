@@ -22,10 +22,38 @@ button {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
+    font-family: $font-barlow-con;
   }
+}
+
+#intro-1 {
+  font-family: $font-barlow-con;
+  text-transform: uppercase;
+  font-size: 18px;
+  > label {
+    color: white;
+    font-weight: 700;
+  }
+  > span {
+    letter-spacing: 3px;
+    color: $grey-blue;
+  }
+}
+
+#intro-3 {
+  font-size: 20px;
+  line-height: 27px;
+  color: $dark-grey-blue;
 }
 
 #intro-4 {
   text-transform: uppercase;
   font-size: 24px;
+  > span {
+    font-family: $font-barlow-con;
+    font-weight: inherit;
+    font-size: 18px;
+    color: $grey-blue;
+    letter-spacing: 3px;
+  }
 }

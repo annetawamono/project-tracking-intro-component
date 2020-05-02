@@ -67,11 +67,39 @@ button.cta {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#intro-1 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+#intro-1 > label {
+  color: white;
+  font-weight: 700;
+}
+#intro-1 > span {
+  letter-spacing: 3px;
+  color: #a0a1ac;
+}
+
+#intro-3 {
+  font-size: 20px;
+  line-height: 27px;
+  color: #5b5f71;
 }
 
 #intro-4 {
   text-transform: uppercase;
   font-size: 24px;
+}
+#intro-4 > span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: inherit;
+  font-size: 18px;
+  color: #a0a1ac;
+  letter-spacing: 3px;
 }
 
 header {
@@ -111,9 +139,34 @@ button.cta {
   background-color: #ff5c5c;
   border: none;
   color: white;
-  border-radius: 2px;
-  padding: 10px 5px;
-  width: 150px;
+  border-radius: 5px;
+  padding: 16px 30px;
+  width: 185px;
+}
+
+#intro-1 {
+  margin-bottom: 29px;
+  padding-top: 6px;
+}
+#intro-1 > label {
+  background-color: #242942;
+  display: inline;
+  padding: 4px 12px 6px 12px;
+  border-radius: 15px;
+}
+#intro-1 > span {
+  margin-left: 14px;
+}
+
+#intro-2 {
+  margin-bottom: 29px;
+}
+
+#intro-4 {
+  margin-top: 66px;
+}
+#intro-4 > span {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
