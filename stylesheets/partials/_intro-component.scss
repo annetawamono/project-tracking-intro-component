@@ -2,6 +2,9 @@ body {
   width: 1440px;
   height: 100vh;
   margin: auto;
+  @media #{$xs} {
+    width: 100vw;
+  }
 }
 
 .container {
@@ -15,16 +18,24 @@ body {
     overflow-x: hidden;
   }
   section#hero-text {
-    width: 43%;
-  }
-  section#hero-image {
-    width: 47%;
-  }
-  #hero-text {
+    // width: 43%;
     margin-top: 256px;
     padding-left: 164px;
     > div {
       width: 572px;
+    }
+  }
+  section#hero-image {
+    width: 47%;
+  }
+  @media #{$xs} {
+    flex-direction: column-reverse;
+    section#hero-text {
+      margin-top: 0;
+      padding: 0;
+      > div {
+        width: 100%;
+      }
     }
   }
 }

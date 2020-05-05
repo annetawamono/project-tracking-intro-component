@@ -137,11 +137,21 @@ header > nav a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+@media only screen and (max-width: 575px) {
+  header {
+    width: 100vw;
+  }
+}
 
 body {
   width: 1440px;
   height: 100vh;
   margin: auto;
+}
+@media only screen and (max-width: 575px) {
+  body {
+    width: 100vw;
+  }
 }
 
 .container {
@@ -156,17 +166,26 @@ body {
   overflow-x: hidden;
 }
 #intro-component section#hero-text {
-  width: 43%;
+  margin-top: 256px;
+  padding-left: 164px;
+}
+#intro-component section#hero-text > div {
+  width: 572px;
 }
 #intro-component section#hero-image {
   width: 47%;
 }
-#intro-component #hero-text {
-  margin-top: 256px;
-  padding-left: 164px;
-}
-#intro-component #hero-text > div {
-  width: 572px;
+@media only screen and (max-width: 575px) {
+  #intro-component {
+    flex-direction: column-reverse;
+  }
+  #intro-component section#hero-text {
+    margin-top: 0;
+    padding: 0;
+  }
+  #intro-component section#hero-text > div {
+    width: 100%;
+  }
 }
 
 button.cta {
