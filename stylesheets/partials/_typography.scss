@@ -15,6 +15,9 @@ h1 {
   font-size: 72px;
   text-transform: uppercase;
   color: $v-dark-blue;
+  @media #{$xs} {
+    font-size: 50px;
+  }
 }
 
 header {
@@ -41,6 +44,12 @@ button {
     text-transform: uppercase;
     font-family: $font-barlow-con;
   }
+  @media #{$xs} {
+    &.cta {
+      word-spacing: 3px;
+      font-size: 16px;
+    }
+  }
 }
 
 #intro-1 {
@@ -54,6 +63,11 @@ button {
   > span {
     letter-spacing: 3px;
     color: $grey-blue;
+  }
+  @media #{$xs} {
+    > span {
+      letter-spacing: 5px;
+    }
   }
 }
 
@@ -72,5 +86,11 @@ button {
     font-size: 18px;
     color: $grey-blue;
     letter-spacing: 3px;
+  }
+  @media #{$xs} {
+    > span {
+      font-size: 16px;
+      letter-spacing: 2px;  
+    }
   }
 }

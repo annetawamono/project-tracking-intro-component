@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: auto;
   @media #{$xs} {
-    width: 100vw;
+    width: 83%;
   }
 }
 
@@ -33,9 +33,13 @@ body {
     section#hero-text {
       margin-top: 0;
       padding: 0;
+      overflow: visible;
       > div {
         width: 100%;
       }
+    }
+    section#hero-image {
+      width: auto;
     }
   }
 }
@@ -53,6 +57,12 @@ button {
     background-color: #FF8584;
     cursor: pointer;
   }
+  @media #{$xs} {
+    &.cta {
+      padding: 15px 25px;
+      width: auto;
+    }
+  }
 }
 
 #intro-1 {
@@ -66,6 +76,12 @@ button {
   }
   > span {
     margin-left: 14px;
+  }
+  @media #{$xs} {
+    margin-bottom: 27px;
+    > span {
+      margin-left: 21px;
+    }
   }
 }
 
@@ -82,6 +98,9 @@ button {
   > span {
     margin-left: 20px;
   }
+  @media #{$xs} {
+    margin-top: 29px;
+  }
 }
 
 #hero-image {
@@ -97,5 +116,10 @@ button {
     width: 65%;
     position: absolute;
     top: 220px;
+  }
+  @media #{$xs} {
+    > div {
+      position: static;
+    }
   }
 }
