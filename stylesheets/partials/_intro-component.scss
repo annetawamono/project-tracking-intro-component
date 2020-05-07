@@ -30,8 +30,9 @@ body {
   }
   @media #{$xs} {
     flex-direction: column-reverse;
+    height: auto;
     section#hero-text {
-      margin-top: 0;
+      margin-top: 27px;
       padding: 0;
       overflow: visible;
       > div {
@@ -59,8 +60,8 @@ button {
   }
   @media #{$xs} {
     &.cta {
-      padding: 15px 25px;
-      width: auto;
+      padding: 15px 5%;
+      width: 44%;
     }
   }
 }
@@ -75,18 +76,21 @@ button {
     border-radius: 15px;
   }
   > span {
-    margin-left: 14px;
+    margin-left: 11px;
   }
   @media #{$xs} {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     > span {
-      margin-left: 21px;
+      margin-left: 3%;
     }
   }
 }
 
 #intro-2 {
   margin-bottom: 29px;
+  @media #{$xs} {
+    margin-bottom: 27px;
+  }
 }
 
 #intro-3 {
@@ -100,6 +104,12 @@ button {
   }
   @media #{$xs} {
     margin-top: 29px;
+    .hide {
+      display: none;
+    }
+    > span {
+      margin-left: 15px;
+    }
   }
 }
 
@@ -121,5 +131,17 @@ button {
     > div {
       position: static;
     }
+    > img {
+      width: 142%;
+      top: 125px;
+      left: 3%;
+    }
+  }
+}
+
+footer {
+  @media #{$xs} {
+    position: absolute;
+    bottom: 0;
   }
 }

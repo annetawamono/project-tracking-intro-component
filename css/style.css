@@ -64,7 +64,7 @@ h1 {
 }
 @media only screen and (max-width: 575px) {
   h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 
@@ -120,6 +120,11 @@ button.cta {
   line-height: 27px;
   color: #5b5f71;
 }
+@media only screen and (max-width: 575px) {
+  #intro-3 {
+    font-size: 19px;
+  }
+}
 
 #intro-4 {
   text-transform: uppercase;
@@ -171,7 +176,7 @@ header > nav.desktop a:hover {
 }
 @media only screen and (max-width: 575px) {
   header {
-    width: 100vw;
+    width: 83%;
     padding: 0;
     margin-top: 38px;
     height: 24px;
@@ -222,9 +227,10 @@ body {
 @media only screen and (max-width: 575px) {
   #intro-component {
     flex-direction: column-reverse;
+    height: auto;
   }
   #intro-component section#hero-text {
-    margin-top: 0;
+    margin-top: 27px;
     padding: 0;
     overflow: visible;
   }
@@ -250,8 +256,8 @@ button:hover {
 }
 @media only screen and (max-width: 575px) {
   button.cta {
-    padding: 15px 25px;
-    width: auto;
+    padding: 15px 5%;
+    width: 44%;
   }
 }
 
@@ -266,19 +272,24 @@ button:hover {
   border-radius: 15px;
 }
 #intro-1 > span {
-  margin-left: 14px;
+  margin-left: 11px;
 }
 @media only screen and (max-width: 575px) {
   #intro-1 {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
   #intro-1 > span {
-    margin-left: 21px;
+    margin-left: 3%;
   }
 }
 
 #intro-2 {
   margin-bottom: 29px;
+}
+@media only screen and (max-width: 575px) {
+  #intro-2 {
+    margin-bottom: 27px;
+  }
 }
 
 #intro-4 {
@@ -290,6 +301,12 @@ button:hover {
 @media only screen and (max-width: 575px) {
   #intro-4 {
     margin-top: 29px;
+  }
+  #intro-4 .hide {
+    display: none;
+  }
+  #intro-4 > span {
+    margin-left: 15px;
   }
 }
 
@@ -309,6 +326,18 @@ button:hover {
 @media only screen and (max-width: 575px) {
   #hero-image > div {
     position: static;
+  }
+  #hero-image > img {
+    width: 142%;
+    top: 125px;
+    left: 3%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 }
 
