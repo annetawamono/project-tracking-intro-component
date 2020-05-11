@@ -192,6 +192,9 @@ header > nav.mobile-list hr {
   width: 85%;
   background-color: #a0a1ac;
 }
+header > nav.mobile.close {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   header > nav.desktop {
     display: block;

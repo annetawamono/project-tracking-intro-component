@@ -36,6 +36,9 @@ header {
       background-color: $grey-blue;
     }
   }
+  > nav.mobile.close {
+    display: none;
+  }
   @media #{$md} {
     > nav.desktop {
       display: block;
