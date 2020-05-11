@@ -24,8 +24,22 @@ body {
       width: 572px;
     }
   }
+  // place code here
   section#hero-image {
     width: 47%;
+    > div {
+      position: absolute;
+      width: 100%;
+      background-color: $light-grey-blue;
+      height: 50vh;
+      border-bottom-left-radius: 60px 60px;
+      z-index: -1;
+    }
+    > img {
+      width: 65%;
+      position: absolute;
+      top: 220px;
+    }
   }
   @media #{$xs} {
     flex-direction: column-reverse;
@@ -46,6 +60,11 @@ body {
         position: relative;
         left: 50%;
         height: 100%;
+      }
+      > img {
+        width: 132%;
+        top: 125px;
+        left: 3%;
       }
     }
   }
@@ -118,29 +137,6 @@ button {
     }
     > span {
       margin-left: 15px;
-    }
-  }
-}
-// this section needs to be integrated to the top section#hero-image
-#hero-image {
-  > div {
-    position: absolute;
-    width: 100%;
-    background-color: $light-grey-blue;
-    height: 50vh;
-    border-bottom-left-radius: 60px 60px;
-    z-index: -1;
-  }
-  > img {
-    width: 65%;
-    position: absolute;
-    top: 220px;
-  }
-  @media #{$xs} {
-    > img {
-      width: 132%;
-      top: 125px;
-      left: 3%;
     }
   }
 }

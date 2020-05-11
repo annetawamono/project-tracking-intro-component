@@ -18,6 +18,24 @@ header {
       cursor: pointer;
     }
   }
+  > nav.mobile-list {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    top: 62px;
+    padding: 7px 0;
+    box-shadow: 0 8px 12px 0 $drop-shadow;
+    a {
+      display: block;
+      padding: 7px 0;
+    }
+    hr {
+      width: 85%;
+      background-color: $grey-blue;
+    }
+  }
   @media #{$md} {
     > nav.desktop {
       display: block;
