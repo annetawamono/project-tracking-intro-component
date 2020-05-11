@@ -200,6 +200,7 @@ body {
 @media only screen and (max-width: 575px) {
   body {
     width: 83%;
+    overflow-x: visible;
   }
 }
 
@@ -230,15 +231,22 @@ body {
     height: auto;
   }
   #intro-component section#hero-text {
-    margin-top: 27px;
+    margin-top: 10%;
     padding: 0;
-    overflow: visible;
   }
   #intro-component section#hero-text > div {
     width: 100%;
   }
   #intro-component section#hero-image {
     width: auto;
+    overflow-x: inherit;
+    height: 58vh;
+  }
+  #intro-component section#hero-image > div {
+    width: 60%;
+    position: relative;
+    left: 50%;
+    height: 100%;
   }
 }
 
@@ -257,7 +265,7 @@ button:hover {
 @media only screen and (max-width: 575px) {
   button.cta {
     padding: 15px 5%;
-    width: 44%;
+    width: 47%;
   }
 }
 
@@ -277,6 +285,9 @@ button:hover {
 @media only screen and (max-width: 575px) {
   #intro-1 {
     margin-bottom: 24px;
+  }
+  #intro-1 > label {
+    padding: 4px 2% 6px 2%;
   }
   #intro-1 > span {
     margin-left: 3%;
@@ -324,11 +335,8 @@ button:hover {
   top: 220px;
 }
 @media only screen and (max-width: 575px) {
-  #hero-image > div {
-    position: static;
-  }
   #hero-image > img {
-    width: 142%;
+    width: 132%;
     top: 125px;
     left: 3%;
   }
@@ -336,8 +344,7 @@ button:hover {
 
 @media only screen and (max-width: 575px) {
   footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: 30px;
   }
 }
 

@@ -4,6 +4,7 @@ body {
   margin: auto;
   @media #{$xs} {
     width: 83%;
+    overflow-x: visible;
   }
 }
 
@@ -14,11 +15,9 @@ body {
 #intro-component {
   height: 100vh;
   section {
-    //width: 50%;
     overflow-x: hidden;
   }
   section#hero-text {
-    // width: 43%;
     margin-top: 256px;
     padding-left: 164px;
     > div {
@@ -32,15 +31,22 @@ body {
     flex-direction: column-reverse;
     height: auto;
     section#hero-text {
-      margin-top: 27px;
+      margin-top: 10%;
       padding: 0;
-      overflow: visible;
       > div {
         width: 100%;
       }
     }
     section#hero-image {
       width: auto;
+      overflow-x: inherit;
+      height: 58vh;
+      > div {
+        width: 60%;
+        position: relative;
+        left: 50%;
+        height: 100%;
+      }
     }
   }
 }
@@ -61,7 +67,7 @@ button {
   @media #{$xs} {
     &.cta {
       padding: 15px 5%;
-      width: 44%;
+      width: 47%;
     }
   }
 }
@@ -80,6 +86,9 @@ button {
   }
   @media #{$xs} {
     margin-bottom: 24px;
+    > label {
+      padding: 4px 2% 6px 2%;
+    }
     > span {
       margin-left: 3%;
     }
@@ -112,7 +121,7 @@ button {
     }
   }
 }
-
+// this section needs to be integrated to the top section#hero-image
 #hero-image {
   > div {
     position: absolute;
@@ -128,11 +137,8 @@ button {
     top: 220px;
   }
   @media #{$xs} {
-    > div {
-      position: static;
-    }
     > img {
-      width: 142%;
+      width: 132%;
       top: 125px;
       left: 3%;
     }
@@ -141,7 +147,6 @@ button {
 
 footer {
   @media #{$xs} {
-    position: absolute;
-    bottom: 0;
+    margin-top: 30px;
   }
 }
