@@ -223,6 +223,26 @@ header > nav.mobile.close, header .close {
   }
 }
 
+@keyframes heroAnim {
+  0% {
+    top: 190px;
+    opacity: 0;
+  }
+  100% {
+    top: 220px;
+    opacity: 1;
+  }
+}
+@keyframes heroAnimMobile {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    top: 125px;
+    opacity: 1;
+  }
+}
 body {
   width: 1440px;
   height: 100vh;
@@ -268,6 +288,12 @@ body {
   width: 65%;
   position: absolute;
   top: 220px;
+  -webkit-animation: heroAnim 1s ease-in 1s 1 normal;
+  -moz-animation: heroAnim 1s ease-in 1s 1 normal;
+  -ms-animation: heroAnim 1s ease-in 1s 1 normal;
+  -o-animation: heroAnim 1s ease-in 1s 1 normal;
+  animation: heroAnim 1s ease-in 1s 1 normal;
+  animation-fill-mode: forwards;
 }
 @media only screen and (max-width: 575px) {
   #intro-component {
@@ -296,6 +322,12 @@ body {
     width: 132%;
     top: 125px;
     left: 3%;
+    -webkit-animation: heroAnimMobile 1s ease-in 1s 1 normal;
+    -moz-animation: heroAnimMobile 1s ease-in 1s 1 normal;
+    -ms-animation: heroAnimMobile 1s ease-in 1s 1 normal;
+    -o-animation: heroAnimMobile 1s ease-in 1s 1 normal;
+    animation: heroAnimMobile 1s ease-in 1s 1 normal;
+    animation-fill-mode: forwards;
   }
 }
 

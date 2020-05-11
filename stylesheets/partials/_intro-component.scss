@@ -1,3 +1,16 @@
+$animation-d: heroAnim 1s ease-in 1s 1 normal;
+$animation-m: heroAnimMobile 1s ease-in 1s 1 normal;
+
+@keyframes heroAnim {
+  0% {top: 190px; opacity: 0;}
+  100% {top: 220px; opacity: 1;}
+}
+
+@keyframes heroAnimMobile {
+  0% {top: 100px; opacity: 0;}
+  100% {top: 125px; opacity: 1;}
+}
+
 body {
   width: 1440px;
   height: 100vh;
@@ -39,6 +52,8 @@ body {
       width: 65%;
       position: absolute;
       top: 220px;
+      @include anim($animation-d);
+      animation-fill-mode: forwards;
     }
   }
   @media #{$xs} {
@@ -65,6 +80,8 @@ body {
         width: 132%;
         top: 125px;
         left: 3%;
+        @include anim($animation-m);
+        animation-fill-mode: forwards;
       }
     }
   }

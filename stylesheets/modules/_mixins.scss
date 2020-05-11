@@ -10,3 +10,11 @@
   color: #333; /* old IE */
   background-color: #333; /* Modern Browsers */
 }
+
+@mixin anim($a) {
+  -webkit-animation: $a;
+  -moz-animation: $a;
+  -ms-animation: $a;
+  -o-animation: $a;
+  animation: $a;
+}
